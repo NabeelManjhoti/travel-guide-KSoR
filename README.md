@@ -28,7 +28,7 @@ and they deploy separately.
 - [Explore the human interface](#explore-the-human-interface)
 - [Serving to agents](#serving-to-agents)
 - [Quick deployment](#quick-deployment)
-- [Make the record yours: replace the starters](#make-the-record-yours-replace-the-starters)
+- [The record today](#the-record-today)
 - [Writing knowledge](#writing-knowledge)
 - [Deploying](#deploying)
 - [Reference](#reference) — [commands](#commands) · [the files](#the-files-explained) · [when something refuses you](#when-something-refuses-you) · [dependencies](#dependencies-and-advisories)
@@ -68,7 +68,9 @@ sentence is the disclosure of the half it cannot.
 Before changing anything, get a feel for how the record behaves. With
 `npm run dev` running:
 
-- **Edit a starter document.** Change its body, save, watch the page update.
+- **Edit a document.** Change a body, save, watch the page update — and note
+  that editing a `stable` document freezes it: the `generated` stamp dates the
+  text, so `ksor build` refuses until the change is re-approved (`ksor-generated-stale`).
 - **Add a new document.** It appears on the dev site, marked — and it would be
   on no built surface at all, because a new document is `status: draft`. No
   page, no sidebar row, no `/llms.txt` entry. That is the system working, not a
@@ -80,12 +82,12 @@ Before changing anything, get a feel for how the record behaves. With
   know — into governed documents), and `format-checker` (the rules, as a program — also what
   `npm run check` runs).
 
-**Treat the starters as scratch paper.** They ship approved by
-`ksor-starter/0.0.60` — a tool, not a person. Edit the body and that
-approval stays stamped on text nobody reviewed, and `npm run check` will not catch
-it, because the frontmatter is still internally consistent. So explore in them
-freely, but start nothing you intend to keep in one of them. Replacing them
-properly is [below](#make-the-record-yours-replace-the-starters).
+**How this record is governed.** It carries five approved documents and no
+starter scaffolding: the starter documents were replaced, and
+`ksor-starter/0.0.60` was removed from `approval_authorities` in
+`.ksor/governance.yaml`. Every document is approved by the owner, and the trust
+tier is `unverified` — the content is source-cited, but no person has fact-checked
+each source. How a document is added, published, or deprecated is [below](#the-record-today).
 
 To see what a build actually produces:
 
@@ -349,39 +351,35 @@ the loop: deploy with no environment variables at all and add the door later.
 
 ---
 
-## Make the record yours: replace the starters
+## The record today
 
-**Five starter documents publish on the first build.** They ship
-`status: stable`, so `npm run dev` and `npm run build` both give you a working record
-straight away — pages, a sidebar, a `/llms.txt` an agent can read — instead of
-an empty shelf. They are approved by `ksor-starter/0.0.60`: the tool
-that wrote them, named as a producer rather than as a person, because no person
-reviewed a word of it. That is what the trust tier _unverified_ on every one of
-those pages says, and it is true.
+This record is **Budget Travel Guide** — budget-friendly travel guidance: best
+places to visit, cheap hotels, cheap flights, and the visa application process.
+It holds **five documents**, all `status: stable`, all approved by the owner
+(`human:nabeelmanjhoti`), and all published to every machine surface
+(`npm run build` admits 5 of 5).
 
-They also describe KSoR, not your organisation — and a record that describes the
-wrong thing describes it on every surface. So replace them, in this order:
-
-1. **Run the intake interview.** Ask your coding agent for it. Three questions —
-   what this record is the final word on, what sits just outside it, and who may
-   approve or withdraw a document — then it writes `instance.md` with you and
-   replaces the `human:you` placeholder in `.ksor/governance.yaml` with your
-   real handle.
-2. **Write and approve at least one document of your own** — ask your agent
-   to add it (the `add-sources` skill), read it on `npm run dev`, then approve it.
-   A record is never empty: delete all five starters before this and the next
-   build refuses `ksor-record-empty` and writes nothing.
-3. **Delete each starter document** as your own knowledge arrives.
-4. **When the last one is gone, delete `ksor-starter/0.0.60` from
-   `approval_authorities` in `.ksor/governance.yaml`.** Nothing of yours should
-   be approved by a tool.
-
-If you did the hello-world tutorial first, your document is approved by
-`human:you`. The interview replaces that placeholder with your real handle —
-and re-attributes every act already recorded under it to you in the same
-change, because it is the same person. A policy that no longer names
-`human:you` beside a document that still cites it refuses
-`ksor-approver-unauthorised`.
+- **Who owns it.** The intake interview is done: `instance.md` carries the
+  record's name, title, description, and explicit boundaries (it does not cover
+  exact per-country visa rules or deadlines, luxury hotels, business class, or
+  booking on anyone's behalf). `.ksor/governance.yaml` names the owner as the
+  sole approval and takedown authority; `.ksor/people.yaml` renders the handle
+  as "Muhammad Nabeel Ali". The starter producer `ksor-starter/0.0.60` is gone
+  from `approval_authorities` — nothing here is approved by a tool.
+- **How content gets added.** Ask your coding agent with the `add-sources`
+  skill; a new document starts `status: draft` and reaches no built surface
+  until it is published.
+- **How a document gets published.** `status: stable` plus both governance
+  keys, where `ksor.approval.by` is an actor the policy authorises — see
+  "Publishing adds two keys" under [Writing knowledge](#writing-knowledge).
+  Editing a stable document's body freezes the build (`ksor-generated-stale`)
+  until the stamps are advanced past the edit and it is re-approved.
+- **Trust tier is `unverified`.** Every figure is named and cited to its
+  published source, but no person has fact-checked those sources yet — the tier
+  rises only when the owner adds `verified` entries of their own.
+- **Places has a shelf life.** `knowledge/places.md` declares
+  `stale_after: 2027-09-14`; the static site is only as current as the last
+  build, so rebuild (and redeploy) before that date.
 
 ---
 
