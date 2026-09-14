@@ -1,8 +1,8 @@
 ---
 format: 2
 name: travel-guide
-title: KSoR
-description: What a Knowledge System of Record is, how a project climbs the governance ladder, and which surfaces publish the same governed knowledge.
+title: Budget Travel Guide
+description: Budget-friendly travel guidance — best places to visit, cheap hotels, cheap flights, and how to apply for a visa.
 toolchain:
   requires: ">=0.0.60"
   scaffolded: "0.0.60"
@@ -28,38 +28,14 @@ database:
 # version: 0.1.0
 ---
 
-This record is authoritative for what a Knowledge System of Record is, how a
-project climbs the governance ladder, and which surfaces the same governed
-knowledge is published through. It does not cover the CLI's release history or
-the internals of the retrieval kernel.
+This record is authoritative for budget-friendly travel guidance: the best
+places to visit, cheap hotels, cheap flights, and the visa application process.
+It does not cover exact visa rules or application deadlines for specific
+countries, luxury hotels, business-class travel, or booking flights or hotels
+on anyone's behalf.
 
-Write and govern the knowledge once; every surface here derives from it. When a
-slide deck, a wiki page or a model's memory disagrees with this record, this
-record wins.
-
-## This is a starter, and it is yours to replace
-
-Everything above describes KSoR itself. It ships filled in so that a fresh
-project has a real governed corpus on the first `npm run dev` — five approved
-documents, three of them inside a folder, and one carrying a summary
-companion — instead of an empty shelf and a placeholder.
-The documents live in `knowledge/`; delete them as your own knowledge arrives.
-
-Be deliberate about replacing it, because a starter that describes the wrong
-thing describes it _everywhere_. Three things here are read by every surface:
-
-- **`title:`** is the display title — the human name every page leads with and
-  the heading of the record's root index. The machine identity stays
-  `travel-guide` in `name:`, and that is what citations and `llms.txt` use.
-- **`description:`** is one sentence that seeds `llms.txt` and the MCP
-  discovery document.
-- **This body** is the MCP server's instructions, handed in full to every
-  connecting agent; its first paragraph is this record's scope, which the site
-  publishes. A record published with it unchanged will tell an agent — quite
-  accurately, and quite uselessly for you — that it is authoritative for what
-  a Knowledge System of Record is.
-
-Ask your coding agent to run the **intake interview** (it knows how — see
-`.agents/skills/intake-interview/`), answer its questions, and let it write
-this document with you. Replace those three and every surface follows,
-because every surface reads them from here.
+Every document here is public — every reader sees every document — and the
+record is meant for people and agents alike. When an answer is not in this
+record, that is the correct answer: decline plainly rather than guessing, and
+never invent a "close enough" figure for a place, a price or a visa step that
+the record does not name.

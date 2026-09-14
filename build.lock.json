@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "build_id": "sha256:5a241ec8c1a4cf46726c4e7891cef99c9acc4aaef00d66464b8a51dbf8f1c29b",
+  "ksor_version": "0.0.60",
+  "okf": {
+    "version": "0.2",
+    "commit": "ad30107c31c06aec8a7d5636e0d1058118604e6f",
+    "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
+  },
+  "source_commit": "89d240ed253a87389c674c7cef108b75053005a9",
+  "dirty": true,
+  "as_of": "2026-09-14T12:05:37.386Z",
+  "drafts": "hidden",
+  "instance_sha256": "ea6b4cf4c3aa96f49062b4a54c23308fc42b15456fea85d22d0db74d3ae3b0c8",
+  "policy_sha256": "4f49688ce2f3a1d4649f5b7831aa2eeaf17f1415fd865ed7d1bce6d1526bd8ec",
+  "people_sha256": "891b93b3d9f82d1a88547fcf9fcbfe4da777d5cc6e39c10f2c3d671fabe5e829",
+  "ledger_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ledger_entries": [],
+  "audiences": {
+    "registry": [],
+    "viewers": {
+      "public": [
+        "public"
+      ]
+    }
+  },
+  "documents": [
+    {
+      "path": "flights.md",
+      "sha256": "a96a6da737bb93260f5320d460808e0b6161519896fe93ca07d035fd8bb8951c",
+      "status": "draft",
+      "audience": [
+        "public"
+      ],
+      "admitted": []
+    },
+    {
+      "path": "hotels.md",
+      "sha256": "f5e7e14527f7c9143b8ebd0b40c85b8fa320d553fe58b265c291454680781a50",
+      "status": "draft",
+      "audience": [
+        "public"
+      ],
+      "admitted": []
+    },
+    {
+      "path": "overview.md",
+      "sha256": "339add265a2bb43ab5ad541d44443a1ca82e45713d9ea8f5fa0cd8fb68f52ea0",
+      "status": "draft",
+      "audience": [
+        "public"
+      ],
+      "admitted": []
+    },
+    {
+      "path": "places.md",
+      "sha256": "bd604f50f601664f9dfb12f8408a10327ae1fab2f28eeb9580deb1fc47b6b3a2",
+      "status": "draft",
+      "audience": [
+        "public"
+      ],
+      "admitted": []
+    },
+    {
+      "path": "visa.md",
+      "sha256": "d125ebcd78d995ceb51a6d84cd112f9eaaf8b012b0bc9c1839d11541cf965e1a",
+      "status": "draft",
+      "audience": [
+        "public"
+      ],
+      "admitted": []
+    }
+  ],
+  "companions": [],
+  "assets": [],
+  "indexes": [
+    {
+      "path": "index.md",
+      "sha256": "510daaf029df1ea749751d81c73ab8e21221d1018a6df802cb21fbb2d5ec7724"
+    }
+  ],
+  "bundles": [
+    {
+      "viewer": "public",
+      "sha256": "d30e986db46ed46786551a47fbc1ab80059b42d8285b99d17341a659c8c8545d",
+      "files": 1
+    }
+  ]
+}
