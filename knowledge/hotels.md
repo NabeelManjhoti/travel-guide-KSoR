@@ -4,7 +4,7 @@ title: Cheap Hotels
 description: Cited, sourced ways to find and book cheap hotel rooms.
 status: stable
 order: 3
-generated: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
+generated: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:30:00Z }
 sources:
   - id: mse-hot
     title: Cheap hotels — MoneySavingExpert
@@ -26,7 +26,7 @@ sources:
     resource: https://www.budgetdirect.com.au/travel-insurance/guides/travel-planning/top-tips-for-booking-cheap-accommodation.html
 ksor:
   audience: [public]
-  approval: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
+  approval: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:30:00Z }
 ---
 
 This document is the record's guide to cheap hotels. The boundary is

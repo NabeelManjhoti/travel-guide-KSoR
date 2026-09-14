@@ -4,7 +4,7 @@ title: Visa Application Process
 description: The general, universal shape of applying for a visa — with official named examples and the cautions that are safe to rely on.
 status: stable
 order: 5
-generated: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
+generated: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:30:00Z }
 sources:
   - id: vfs-india-visa
     title: Various Steps for your Visa Process — VFS Global (India/UK)
@@ -23,7 +23,7 @@ sources:
     resource: https://visa.vfsglobal.com/one-pager/norway/philippines/english/pdf/CHECKLIST-BUSINESS-Latest-U.pdf
 ksor:
   audience: [public]
-  approval: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
+  approval: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:30:00Z }
 ---
 
 This document is the record's guide to the **visa application process**. The

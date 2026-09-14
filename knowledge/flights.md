@@ -4,7 +4,7 @@ title: Cheap Flights
 description: Cited, sourced methods and tools for finding cheap flights.
 status: stable
 order: 4
-generated: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
+generated: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:30:00Z }
 sources:
   - id: skyscanner-flights
     title: How to find cheap flights on any airline — Skyscanner
@@ -26,7 +26,7 @@ sources:
     resource: https://www.google.com/travel/flights
 ksor:
   audience: [public]
-  approval: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
+  approval: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:30:00Z }
 ---
 
 This document is the record's guide to cheap flights. Two boundaries are

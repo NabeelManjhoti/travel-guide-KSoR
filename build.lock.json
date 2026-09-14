@@ -1,15 +1,15 @@
 {
   "format": 1,
-  "build_id": "sha256:0134575c57ed3d3a6c2e1b4ab2961552a6e71f94df3c52a4c5ff19f8910ee7b9",
+  "build_id": "sha256:93c3353b59ae5c6d453a34bcc967a395a9ef323f225e9182455f040540e22865",
   "ksor_version": "0.0.60",
   "okf": {
     "version": "0.2",
     "commit": "ad30107c31c06aec8a7d5636e0d1058118604e6f",
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
-  "source_commit": "a5f6536cd11df4de3bf44e88d9dc14f9293875df",
-  "dirty": false,
-  "as_of": "2026-09-14T12:11:08.870Z",
+  "source_commit": "92606c864c43a9d30cbaeb9af459d02067e90385",
+  "dirty": true,
+  "as_of": "2026-09-14T12:29:07.411Z",
   "drafts": "hidden",
   "instance_sha256": "ea6b4cf4c3aa96f49062b4a54c23308fc42b15456fea85d22d0db74d3ae3b0c8",
   "policy_sha256": "4f49688ce2f3a1d4649f5b7831aa2eeaf17f1415fd865ed7d1bce6d1526bd8ec",
@@ -27,7 +27,7 @@
   "documents": [
     {
       "path": "flights.md",
-      "sha256": "6d2463010dc3cc0f27d0aa6cf3e6393d406e202f170af3206c204fc7f1e7cdf3",
+      "sha256": "1e50660b53214704480d3a7e56b7a5ed85f2acb598c6971a58055bf6f038537e",
       "status": "stable",
       "audience": [
         "public"
@@ -38,7 +38,7 @@
     },
     {
       "path": "hotels.md",
-      "sha256": "3065eecf4536a3b81d6a6aa8546c080b1defe5ff257f0bde307d0b295c66a695",
+      "sha256": "9f0c2b5b73708b761e26945793c023dcd16384f000afa2c85659dd7c6651f042",
       "status": "stable",
       "audience": [
         "public"
@@ -60,7 +60,7 @@
     },
     {
       "path": "places.md",
-      "sha256": "0937c903b8a8667a3c3f4ca7a3780495a7671e31c653fcae133ed040e423f6d5",
+      "sha256": "95868cff4d8300e5813074a069a10d9f73f078c7fd83c982ede8adba42c63554",
       "status": "stable",
       "audience": [
         "public"
@@ -71,7 +71,7 @@
     },
     {
       "path": "visa.md",
-      "sha256": "f0a6705155d583f6ca03ac98c390389b14bbb47e575920cc62dc0fa8af777ff7",
+      "sha256": "f5e6dbc5360fcf0f841c728029201a067a240d384e8dd1475a063c13e4486143",
       "status": "stable",
       "audience": [
         "public"
@@ -86,13 +86,13 @@
   "indexes": [
     {
       "path": "index.md",
-      "sha256": "510daaf029df1ea749751d81c73ab8e21221d1018a6df802cb21fbb2d5ec7724"
+      "sha256": "06fb2a1e370082e544130ea21004c9f116648f2ac5cc21bcedd2b76d8b05c006"
     }
   ],
   "bundles": [
     {
       "viewer": "public",
-      "sha256": "72d8e2c28e06797e50d5502ef064f448ea9988f114090a9b0b3ceb87c8a05ffe",
+      "sha256": "51f26a8c39d84f6da4953635df8142cd836449e5f04ff389cc8d53f1b60372d3",
       "files": 6
     }
   ]
