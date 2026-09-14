@@ -27,9 +27,9 @@
 /* ── Ink, paper, rule ────────────────────────────────────────────────────────
    shadcn's neutral palette, retuned on two axes and otherwise left alone.
 
-   The ink carries a trace of blue (chroma .012 at hue 255) instead of being a
-   pure grey: it sits with the accent rather than beside it, and a record set in
-   cool ink reads as printed rather than as chrome. The rules are darker than
+   The ink carries a trace of warmth (chroma .012 at hue 85) instead of being a
+   pure grey: it sits with the accent rather than beside it, and a record set on
+   warm paper reads as printed rather than as chrome. The rules are darker than
    shadcn's default (0.9 against 0.922) because this design puts weight on
    hairlines, and a rule you have to look for is not doing its job.
 
@@ -40,96 +40,99 @@
    everywhere has no accent. `--ksor-caution` (further down) is the only other
    colour with a job, and its job is the opposite one. */
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.17 0.012 255);
-  --card: oklch(0.985 0.002 255);
-  --card-foreground: oklch(0.17 0.012 255);
+  --background: oklch(0.99 0.004 85);
+  --foreground: oklch(0.17 0.012 85);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.17 0.012 85);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.17 0.012 255);
-  --primary: #1d4ed8;
+  --popover-foreground: oklch(0.17 0.012 85);
+  /* The travel teal: the whole brand — a shared asset and a currency grid
+     wedge at once, one step in from the green that means "correct". */
+  --primary: #0f766e;
   --primary-foreground: #ffffff;
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.972 0.002 255);
-  --muted-foreground: oklch(0.53 0.012 255);
-  --accent: oklch(0.965 0.004 255);
-  --accent-foreground: oklch(0.17 0.012 255);
+  --muted: oklch(0.972 0.003 85);
+  --muted-foreground: oklch(0.53 0.012 85);
+  --accent: oklch(0.965 0.005 85);
+  --accent-foreground: oklch(0.17 0.012 85);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.9 0.004 255);
-  --input: oklch(0.9 0.004 255);
-  --ring: #1d4ed8;
+  --border: oklch(0.9 0.005 85);
+  --input: oklch(0.9 0.005 85);
+  --ring: #0f766e;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
   --radius: 0.5rem;
-  --sidebar: oklch(0.985 0.002 255);
-  --sidebar-foreground: oklch(0.17 0.012 255);
+  --sidebar: oklch(0.985 0.003 85);
+  --sidebar-foreground: oklch(0.17 0.012 85);
   --sidebar-primary: oklch(0.205 0 0);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.965 0.004 255);
-  --sidebar-accent-foreground: oklch(0.17 0.012 255);
-  --sidebar-border: oklch(0.9 0.004 255);
-  --sidebar-ring: #1d4ed8;
+  --sidebar-accent: oklch(0.965 0.005 85);
+  --sidebar-accent-foreground: oklch(0.17 0.012 85);
+  --sidebar-border: oklch(0.9 0.005 85);
+  --sidebar-ring: #0f766e;
 
   /* The cover: the surface the front door's band is printed on. It follows the
      theme like everything else — in the light it is pale stock, a shade of the
-     brand rather than a shade of grey (hue 258, between the text's 255 and the
-     accent's 264). It was ink in both themes for one afternoon, which made the
-     light theme a dark page with a white foot. */
-  --ksor-cover: oklch(0.965 0.013 258);
-  --ksor-cover-foreground: oklch(0.2 0.03 258);
-  --ksor-cover-muted: oklch(0.5 0.022 258);
-  --ksor-cover-rule: oklch(0.885 0.016 258);
-  --ksor-cover-hover: oklch(0.935 0.018 258);
+     travel amber rather than a shade of grey (hue 85, the paper's own warmth,
+     lit one step toward the amber that welcomes at the front door). It was ink
+     in both themes for one afternoon, which made the light theme a dark page
+     with a white foot. */
+  --ksor-cover: oklch(0.965 0.013 85);
+  --ksor-cover-foreground: oklch(0.2 0.03 85);
+  --ksor-cover-muted: oklch(0.5 0.022 85);
+  --ksor-cover-rule: oklch(0.885 0.016 85);
+  --ksor-cover-hover: oklch(0.935 0.018 85);
   --ksor-cover-panel: oklch(1 0 0);
-  --ksor-cover-panel-rule: oklch(0.9 0.014 258);
+  --ksor-cover-panel-rule: oklch(0.9 0.014 85);
 }
 
 .dark {
-  --background: oklch(0.155 0.012 255);
-  --foreground: oklch(0.965 0.004 255);
-  --card: oklch(0.195 0.012 255);
-  --card-foreground: oklch(0.965 0.004 255);
-  --popover: oklch(0.195 0.012 255);
-  --popover-foreground: oklch(0.965 0.004 255);
-  --primary: #7fb0f9;
-  --primary-foreground: #081226;
+  --background: oklch(0.155 0.012 85);
+  --foreground: oklch(0.965 0.004 85);
+  --card: oklch(0.195 0.012 85);
+  --card-foreground: oklch(0.965 0.004 85);
+  --popover: oklch(0.195 0.012 85);
+  --popover-foreground: oklch(0.965 0.004 85);
+  --primary: #2dd4bf;
+  --primary-foreground: #03231e;
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.24 0.012 255);
-  --muted-foreground: oklch(0.7 0.014 255);
-  --accent: oklch(0.26 0.014 255);
-  --accent-foreground: oklch(0.965 0.004 255);
+  --muted: oklch(0.24 0.012 85);
+  --muted-foreground: oklch(0.7 0.014 85);
+  --accent: oklch(0.26 0.014 85);
+  --accent-foreground: oklch(0.965 0.004 85);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 16%);
-  --ring: #7fb0f9;
+  --ring: #2dd4bf;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.185 0.012 255);
-  --sidebar-foreground: oklch(0.965 0.004 255);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar: oklch(0.185 0.012 85);
+  --sidebar-foreground: oklch(0.965 0.004 85);
+  --sidebar-primary: oklch(0.55 0.16 195);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.26 0.014 255);
-  --sidebar-accent-foreground: oklch(0.965 0.004 255);
+  --sidebar-accent: oklch(0.26 0.014 85);
+  --sidebar-accent-foreground: oklch(0.965 0.004 85);
   --sidebar-border: oklch(1 0 0 / 12%);
-  --sidebar-ring: #7fb0f9;
+  --sidebar-ring: #2dd4bf;
 
   /* In the dark the cover rises one step ABOVE the page (0.245 against the
      background's 0.155) rather than inverting: a cover is the surface that
      catches the light. Same object, same lighting, darker room. */
-  --ksor-cover: oklch(0.245 0.038 258);
-  --ksor-cover-foreground: oklch(0.97 0.006 258);
-  --ksor-cover-muted: oklch(0.72 0.022 258);
-  --ksor-cover-rule: oklch(0.34 0.03 258);
-  --ksor-cover-hover: oklch(0.3 0.035 258);
-  --ksor-cover-panel: oklch(0.285 0.036 258);
-  --ksor-cover-panel-rule: oklch(0.36 0.03 258);
+  --ksor-cover: oklch(0.245 0.038 85);
+  --ksor-cover-foreground: oklch(0.97 0.006 85);
+  --ksor-cover-muted: oklch(0.72 0.022 85);
+  --ksor-cover-rule: oklch(0.34 0.03 85);
+  --ksor-cover-hover: oklch(0.3 0.035 85);
+  --ksor-cover-panel: oklch(0.285 0.036 85);
+  --ksor-cover-panel-rule: oklch(0.36 0.03 85);
 }
 
 /* The token → utility mapping shadcn components compile against, as
@@ -245,8 +248,10 @@
    than trusted: asked for a wider column, the honest thing was to measure what
    this one already is. Simulating the browser's own line-breaking over this
    record's prose in its real font gives 89 characters at 46rem — not 66 — and
-   the shell's 900px gives 122, not 78. Both figures in the paragraph above
-   were wrong; the CONCLUSION they supported was right, and by a wider margin
+   the shell's 900px gives 122, not 78. Both figures above were measured against a 16px body; the
+   body has since been raised to 17px (see "The BODY text"), which lengthens
+   the line's reach toward the 45–75 band without touching the measure. The
+   CONCLUSION they supported was right, and by a wider margin
    than it claimed.
 
    So widening was tried and reverted: 49rem counts 95 and 52rem counts 104,
@@ -289,6 +294,23 @@ html > body[data-scroll-locked] {
 
 .dark {
   --ksor-caution: #e0906e;
+}
+
+/* The front door's WELCOME colour — the amber a travel guide opens on. The
+   record's own accent is the teal (`--primary`), spent on actions, links and
+   structure across the whole site; this is a second job, "first step in a
+   trip", and the cover spends it on the hairline under the title and the one
+   action a front door gets. A pair, like every colour on this site — declared
+   on the root and re-declared in the dark for the reason `--ksor-caution`
+   above records. */
+:root {
+  --ksor-amber: #b45309;
+  --ksor-amber-foreground: #ffffff;
+}
+
+.dark {
+  --ksor-amber: #fbbf24;
+  --ksor-amber-foreground: #241503;
 }
 
 /* A tool's own colour, across the whole block.
@@ -397,10 +419,10 @@ html > body[data-scroll-locked] {
 
    Light and dark differ only in how far the stage sits from its surround. */
 :root {
-  --ksor-stage: oklch(0.21 0.018 258);
+  --ksor-stage: oklch(0.21 0.018 85);
   --ksor-stage-ink: oklch(0.96 0.005 90);
-  --ksor-stage-dim: oklch(0.74 0.012 258);
-  --ksor-stage-rule: oklch(0.32 0.02 258);
+  --ksor-stage-dim: oklch(0.74 0.012 85);
+  --ksor-stage-rule: oklch(0.32 0.02 85);
 }
 
 /* In dark the stage must RISE off the page, not sink into it. A stage darker
@@ -408,10 +430,10 @@ html > body[data-scroll-locked] {
    so the slide lost its edges entirely and read as text floating on the page
    (found live). On a dark ground, elevation reads as lighter. */
 .dark {
-  --ksor-stage: oklch(0.26 0.019 258);
+  --ksor-stage: oklch(0.26 0.019 85);
   --ksor-stage-ink: oklch(0.96 0.005 90);
-  --ksor-stage-dim: oklch(0.76 0.012 258);
-  --ksor-stage-rule: oklch(0.38 0.02 258);
+  --ksor-stage-dim: oklch(0.76 0.012 85);
+  --ksor-stage-rule: oklch(0.38 0.02 85);
 }
 
 .ksor-stage {
@@ -555,8 +577,10 @@ html > body[data-scroll-locked] {
    tracking. Measured against the description at 18px, that is four shades of
    grey text rather than a document with structure: the title barely leads and
    the description competes with it. The title takes the lead it should have,
-   the description steps back under it, and the body is left alone at 16/28,
-   which is right for long-form reading. Scoped to the shell's own page id, so
+   the description steps back under it, and the body is raised to 17px on
+   comfortable leading (the "Body text" rule above it) — the setting for
+   long-form reading, not the 16/28 that made a destination page read as print
+   to skim. Scoped to the shell's own page id, so
    nothing depends on which order two arbitrary Tailwind sizes land in. */
 #nd-page > h1 {
   font-family: var(--font-display);
@@ -573,6 +597,17 @@ html > body[data-scroll-locked] {
   font-size: 1.0625rem;
   line-height: 1.6;
   text-wrap: pretty;
+}
+
+/* The BODY text. Raised from 16px to 17px on 1.75 leading — the scaffold's
+   reading research measured a 16px line at 89 characters against its 46rem
+   measure (see below); at 17px the same measure holds fewer, and the line
+   falls further into the 45–75 band the research settles on while the reading
+   itself gets easier on a page of travel budgets and notes. Paragraph and list
+   text only — headings, code and the furniture keep their own scales. */
+#nd-page .prose :is(p, li) {
+  font-size: 1.0625rem;
+  line-height: 1.75;
 }
 
 /* The section headings inside a document. The shell styles the title and
@@ -763,22 +798,24 @@ html > body[data-scroll-locked] {
 }
 
 /* Inline code is the record's machine vocabulary — a frontmatter key, a path,
-   a command — and it was set in the same ink as the prose around it, so the
-   grey chip carried the whole distinction (owner, 2026-08-22).
+    a command — and it was set in the same ink as the prose around it, so the
+    grey chip carried the whole distinction (owner, 2026-08-22).
 
-   It takes a colour of its own rather than one already spoken for. The accent
-   belongs to links and actions, and inline code is neither — tinting it blue
-   would make every key look clickable, which is the defect one rule up in
-   reverse. `--ksor-caution` is the other coloured thing here and it means "the
-   record withdrew this". So: a third token, a deep teal, far enough from the
-   accent's hue to be told apart at 13px and cool enough to sit in a palette
-   built on blue ink. A pair, like every colour on this site. */
+    It takes a colour of its own rather than one already spoken for. The accent
+    belongs to links and actions, and inline code is neither — and the deep
+    teal this token used to be became the accent when this record was dressed
+    as a travel guide, so tinting the code with it would make every key look
+    clickable, which is the defect one rule up in reverse. `--ksor-caution` and
+    `--ksor-amber` are the other coloured things here, and each means something
+    it does not. So: a violet, far enough from the teal accent and the amber
+    next to it to be told apart at 13px, and cool enough to sit in a palette
+    built on warm paper. A pair, like every colour on this site. */
 :root {
-  --ksor-code: #0f6f6a;
+  --ksor-code: #5b21b6;
 }
 
 .dark {
-  --ksor-code: #6fd8c8;
+  --ksor-code: #c4b5fd;
 }
 
 #nd-page .prose :not(pre) > code {
@@ -930,15 +967,20 @@ html > body[data-scroll-locked] {
   font-weight: 600;
 }
 
-/* And the TERM a list item defines. `**Heartbeat:** a schedule that…` is the
-   commonest shape in this record — a term, then what it means — and the term
-   is the thing a reader scans for.
+/* And the TERM a list item or a paragraph defines. `**Heartbeat:** a schedule
+   that…` is the commonest shape in this record — a term, then what it means —
+   and the term is the thing a reader scans for. The list branch below is the
+   shape inside `## How often` items; the paragraph branch is the shape a field
+   opens its own line with, which is how a destination page runs its budgets
+   (`**Daily budget:** …`, `**Best time:** …`).
 
-   Only the term. Bold elsewhere in the sentence stays ink, because a page
-   where every emphasis is coloured has no emphasis: the accent stops meaning
-   "this is the one to find" and starts meaning "this is bold". */
+   Only the term, and only when it leads the line. Bold elsewhere in the
+   sentence stays ink, because a page where every emphasis is coloured has no
+   emphasis: the accent stops meaning "this is the one to find" and starts
+   meaning "this is bold". */
 #nd-page .prose li > strong:first-child,
-#nd-page .prose li > p:first-child > strong:first-child {
+#nd-page .prose li > p:first-child > strong:first-child,
+#nd-page .prose p > strong:first-child {
   color: var(--color-fd-primary);
 }
 

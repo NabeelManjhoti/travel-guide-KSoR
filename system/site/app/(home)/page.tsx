@@ -46,6 +46,11 @@ export default function HomePage(): ReactElement {
   const entries = entriesUnder("");
   const lead = entries.find((entry) => entry.url === first.url) ?? entryFor(first);
   const behind = entries.filter((entry) => entry.url !== lead.url).slice(0, 3);
+  // The cover's quiet category row names where the record goes BEYOND the
+  // front door, so the place the button already opens (the lead, normally
+  // the record's overview) is left out — a chip pointing at the same page
+  // the CTA opens, moments above it, is noise rather than navigation.
+  const jumps = entries.filter((entry) => entry.url !== lead.url);
 
   return (
     <main className="flex flex-1 flex-col">
@@ -65,6 +70,11 @@ export default function HomePage(): ReactElement {
         firstUrl={first.url}
         lead={lead}
         behind={behind}
+        // The record's top level beyond the CTA's own landing, as the cover's
+        // quiet category row — the chip list is the same listing the sidebar
+        // walks (minus the one page the button above opens), so it always
+        // matches.
+        jumps={jumps}
         // Signed from inside the cover, so the front door is one screen rather
         // than a band with a strip of page beneath it.
         foot={

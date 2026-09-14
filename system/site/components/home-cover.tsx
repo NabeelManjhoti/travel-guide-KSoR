@@ -28,6 +28,7 @@ export function HomeCover({
   firstUrl,
   lead,
   behind,
+  jumps,
 }: {
   mark: StaticImageData;
   name: string;
@@ -39,6 +40,10 @@ export function HomeCover({
   lead: RecordEntry;
   /** The entries standing behind it in the stack. */
   behind: readonly RecordEntry[];
+  /** The record's own top level, as the front door's quiet category row —
+   *  the same listing the sidebar walks, so the chips are the record, not a
+   *  list typed here. */
+  jumps: readonly RecordEntry[];
   /** Signed from inside the cover, so the front door is one screen. */
   foot?: ReactElement;
 }): ReactElement {
@@ -79,7 +84,7 @@ export function HomeCover({
                   className="size-[30px] rounded ring-1 ring-[var(--ksor-cover-rule)]"
                 />
                 <p className="font-mono text-xs tracking-[0.18em] text-[var(--ksor-cover-muted)] uppercase">
-                  System of record
+                  Travel guide
                   <span aria-hidden className="mx-2 text-[var(--ksor-cover-rule)]">
                     /
                   </span>
@@ -95,8 +100,10 @@ export function HomeCover({
               cover. It was pinned to the dark-theme blue back when the cover
               was dark in BOTH themes; once the cover started following the
               theme that left a pale blue hairline on a pale ground, all but
-              invisible in light (found live 2026-08-22). */}
-              <div className="mt-7 h-0.5 w-16 bg-fd-primary" />
+              invisible in light (found live 2026-08-22). It is the welcome
+              amber now — the front door's one deliberate colour besides the
+              button, spent on the line and the chips' dots. */}
+              <div className="mt-7 h-0.5 w-16 bg-[var(--ksor-amber)]" />
             </div>
 
             {purpose === null ? null : (
@@ -107,12 +114,15 @@ export function HomeCover({
 
             <div className="mt-9 flex flex-wrap items-center gap-3 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:220ms] motion-safe:[animation-fill-mode:backwards]">
               {/* One primary action. It names where it lands, because a front door
-              that says only "open" makes you click to find out. */}
+              that says only "open" makes you click to find out. The rest of the
+              site spends its accent on links and structure; this button is the
+              welcome amber, the one "first step in a trip" colour the cover is
+              allowed. */}
               <Link
                 href={firstUrl}
-                className="group inline-flex items-center gap-2.5 rounded-md bg-fd-primary px-6 py-3.5 text-sm font-medium text-fd-primary-foreground transition-transform hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring motion-reduce:transition-none"
+                className="group inline-flex items-center gap-2.5 rounded-md bg-[var(--ksor-amber)] px-6 py-3.5 text-sm font-medium text-[var(--ksor-amber-foreground)] transition-transform hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ksor-amber)] motion-reduce:transition-none"
               >
-                Open the record
+                Read the guide
                 <span
                   aria-hidden
                   className="transition-transform group-hover:translate-x-0.5 motion-reduce:transform-none"
@@ -121,6 +131,32 @@ export function HomeCover({
                 </span>
               </Link>
             </div>
+
+            {/* The record's own top level, as a quiet row of chips — its
+                categories, derived rather than typed, so a record that grows a
+                destination links it here without a change to this file. Each chip
+                carries an amber dot, the hairline's colour, so the row reads with
+                the title's welcome rather than as a second menu. */}
+            {jumps.length === 0 ? null : (
+              <nav
+                aria-label="In this record"
+                className="mt-8 flex flex-wrap gap-x-5 gap-y-2.5 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:320ms] motion-safe:[animation-fill-mode:backwards]"
+              >
+                {jumps.map((entry) => (
+                  <Link
+                    key={entry.url}
+                    href={entry.url}
+                    className="group inline-flex items-center gap-2 font-mono text-xs tracking-wide text-[var(--ksor-cover-muted)] transition-colors hover:text-[var(--ksor-cover-foreground)]"
+                  >
+                    <span
+                      aria-hidden
+                      className="size-1.5 rounded-full bg-[var(--ksor-amber)] opacity-70 transition-opacity group-hover:opacity-100"
+                    />
+                    {entry.title}
+                  </Link>
+                ))}
+              </nav>
+            )}
           </div>
 
           {/* The record, not a picture of one. It also carries what the meta
