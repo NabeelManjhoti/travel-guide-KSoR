@@ -6,10 +6,9 @@
       "url": "https://mcp.neon.tech/mcp",
       "enabled": true
     },
-    "test-record": {
+    "travel-guide": {
       "type": "remote",
-      "url": "http://127.0.0.1:8090/mcp",
-      "enabled": true
+      "url": "http://127.0.0.1:8080/mcp"
     }
   }
 }
