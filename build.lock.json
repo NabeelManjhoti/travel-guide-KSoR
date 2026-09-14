@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "build_id": "sha256:5a241ec8c1a4cf46726c4e7891cef99c9acc4aaef00d66464b8a51dbf8f1c29b",
+  "build_id": "sha256:0134575c57ed3d3a6c2e1b4ab2961552a6e71f94df3c52a4c5ff19f8910ee7b9",
   "ksor_version": "0.0.60",
   "okf": {
     "version": "0.2",
@@ -8,8 +8,8 @@
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
   "source_commit": "34679d2136e5aae413837e543f20cb809590460b",
-  "dirty": false,
-  "as_of": "2026-09-14T12:06:15.063Z",
+  "dirty": true,
+  "as_of": "2026-09-14T12:10:37.442Z",
   "drafts": "hidden",
   "instance_sha256": "ea6b4cf4c3aa96f49062b4a54c23308fc42b15456fea85d22d0db74d3ae3b0c8",
   "policy_sha256": "4f49688ce2f3a1d4649f5b7831aa2eeaf17f1415fd865ed7d1bce6d1526bd8ec",
@@ -27,48 +27,58 @@
   "documents": [
     {
       "path": "flights.md",
-      "sha256": "a96a6da737bb93260f5320d460808e0b6161519896fe93ca07d035fd8bb8951c",
-      "status": "draft",
+      "sha256": "6d2463010dc3cc0f27d0aa6cf3e6393d406e202f170af3206c204fc7f1e7cdf3",
+      "status": "stable",
       "audience": [
         "public"
       ],
-      "admitted": []
+      "admitted": [
+        "public"
+      ]
     },
     {
       "path": "hotels.md",
-      "sha256": "f5e7e14527f7c9143b8ebd0b40c85b8fa320d553fe58b265c291454680781a50",
-      "status": "draft",
+      "sha256": "3065eecf4536a3b81d6a6aa8546c080b1defe5ff257f0bde307d0b295c66a695",
+      "status": "stable",
       "audience": [
         "public"
       ],
-      "admitted": []
+      "admitted": [
+        "public"
+      ]
     },
     {
       "path": "overview.md",
-      "sha256": "339add265a2bb43ab5ad541d44443a1ca82e45713d9ea8f5fa0cd8fb68f52ea0",
-      "status": "draft",
+      "sha256": "e0cc58fcc6fdd6281b3fac9e2abeb1e4f67036e25ecfd8e0533d98494d5d9b3d",
+      "status": "stable",
       "audience": [
         "public"
       ],
-      "admitted": []
+      "admitted": [
+        "public"
+      ]
     },
     {
       "path": "places.md",
-      "sha256": "bd604f50f601664f9dfb12f8408a10327ae1fab2f28eeb9580deb1fc47b6b3a2",
-      "status": "draft",
+      "sha256": "0937c903b8a8667a3c3f4ca7a3780495a7671e31c653fcae133ed040e423f6d5",
+      "status": "stable",
       "audience": [
         "public"
       ],
-      "admitted": []
+      "admitted": [
+        "public"
+      ]
     },
     {
       "path": "visa.md",
-      "sha256": "d125ebcd78d995ceb51a6d84cd112f9eaaf8b012b0bc9c1839d11541cf965e1a",
-      "status": "draft",
+      "sha256": "f0a6705155d583f6ca03ac98c390389b14bbb47e575920cc62dc0fa8af777ff7",
+      "status": "stable",
       "audience": [
         "public"
       ],
-      "admitted": []
+      "admitted": [
+        "public"
+      ]
     }
   ],
   "companions": [],
@@ -82,8 +92,8 @@
   "bundles": [
     {
       "viewer": "public",
-      "sha256": "d30e986db46ed46786551a47fbc1ab80059b42d8285b99d17341a659c8c8545d",
-      "files": 1
+      "sha256": "72d8e2c28e06797e50d5502ef064f448ea9988f114090a9b0b3ceb87c8a05ffe",
+      "files": 6
     }
   ]
 }

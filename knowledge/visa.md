@@ -2,14 +2,16 @@
 type: Document
 title: Visa Application Process
 description: General guidance on how to apply for a visa, never per-country rules.
-status: draft
+status: stable
 order: 5
+generated: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
 sources:
   - id: intake-interview-2026-09-14
     title: Intake interview with the owner
     resource: "Intake interview with human:nabeelmanjhoti (the record's owner), 2026-09-14T11:30:00Z, conducted by the intake-interview skill"
 ksor:
   audience: [public]
+  approval: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
 ---
 
 This document is the record's guide to the visa application process. The owner

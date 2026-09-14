@@ -2,14 +2,16 @@
 type: Document
 title: Budget Travel Guide
 description: What this record covers — budget-friendly travel guidance and the boundary around it.
-status: draft
+status: stable
 order: 1
+generated: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
 sources:
   - id: intake-interview-2026-09-14
     title: Intake interview with the owner
     resource: "Intake interview with human:nabeelmanjhoti (the record's owner), 2026-09-14T11:30:00Z, conducted by the intake-interview skill"
 ksor:
   audience: [public]
+  approval: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
 ---
 
 This record is the owner's budget-friendly travel guide. It covers the best

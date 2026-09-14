@@ -2,14 +2,16 @@
 type: Document
 title: Budget Places to Visit
 description: Best places to visit that fit a budget, as the record's places guide.
-status: draft
+status: stable
 order: 2
+generated: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
 sources:
   - id: intake-interview-2026-09-14
     title: Intake interview with the owner
     resource: "Intake interview with human:nabeelmanjhoti (the record's owner), 2026-09-14T11:30:00Z, conducted by the intake-interview skill"
 ksor:
   audience: [public]
+  approval: { by: "human:nabeelmanjhoti", at: 2026-09-14T12:10:00Z }
 ---
 
 This document is the record's guide to the best places to visit on a budget.
